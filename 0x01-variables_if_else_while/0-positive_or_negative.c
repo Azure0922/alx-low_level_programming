@@ -7,7 +7,12 @@
  */
 int main(void)
 {
-	int n = 0;
+	int n;
+	/**
+	 * n - variable any number will be assigned to
+	 */
+
+	scanf("%i", &n);
 
 	if (n > 0)
 	{
@@ -21,5 +26,6 @@ int main(void)
 	{
 		printf("%i is negative\n", n);
 	}
+
 	return (0);
 }
