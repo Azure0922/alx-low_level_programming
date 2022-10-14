@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - positive or negative
@@ -11,6 +13,20 @@ int main(void)
 	/**
 	 * n - variable any number will be assigned to
 	 */
+
+	srand(time(0));
+	/**
+	 * srand - command
+	 *
+	 * time - source code time
+	 */
+
+		n = rand() - RAND_MAX / 2;
+		/**
+		 * rand - sc command
+		 *
+		 * RAND_MAX - another command
+		 */
 
 	scanf("%i", &n);
 
