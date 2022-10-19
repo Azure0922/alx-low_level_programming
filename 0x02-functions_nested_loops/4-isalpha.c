@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 
 /**
@@ -7,9 +6,9 @@
  *
  * Return: 1
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
-	scanf("%c", &c);
+	/* c - char */
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);

@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdlib.h>
 
 /**
  * _abs - absolute value
@@ -9,11 +8,24 @@
  */
 int _abs(int n)
 {
-	int r = abs(n);
-	/* r - absolute value */
+	/* n - integer */
+	if (n >= '0')
+	{
+		putchar(n);
+	}
+	else if (n < 0)
+	{
+		int k, l;
+		k = '-1';
+		l = n * k;
+		/**
+		 * k - abs
+		 * l - product
+		 */
 
-	write(1, "%d", sizeof(r));
-
-	return (0);
+		putchar(l);
+		
+		return (0);
+	}
 }	
 

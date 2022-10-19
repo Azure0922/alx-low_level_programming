@@ -5,19 +5,39 @@
  */
 void jack_bauer(void)
 {
-	float n;
-	n = '0';
+	int n = '0';
+	/* n - hour */
 
-	while (n <= '23')
+	while (n < '3')
 	{
-		write(1, "%f:", 3);
+		write(1, &n, 1);
 
-		float m;
-		m = '0';
+		int m = '0';
+		/* m - hour 2 */
 
-		while (m <= '59')
+		while (m <= '9')
 		{
-			write(1, "%f\n", 3);
+			write(1, &m, 1);
+			write(1, ":", 1);
+
+			int x = '0';
+			/* x - min */
+
+			while (x < '6')
+			{
+				write(1, &x, 1);
+
+				int y = '0';
+				/* y - min 2 */
+				
+				while (y <= '9')
+				{
+					write(1, &y, 1);
+					write(1, "\n", 1);
+					y++;
+				}
+				x++;
+			}
 			m++;
 		}
 		n++;

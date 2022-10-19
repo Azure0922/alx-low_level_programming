@@ -6,6 +6,7 @@
  */
 int print_sign(int n)
 {
+	/* n -integer */
 	if (n > '0')
 	{
 		write(1, "+", 1);
@@ -16,7 +17,7 @@ int print_sign(int n)
 		write(1, "0", 1);
 		return (0);
 	}
-	else if
+	else if (n < '0')
 	{
 		write(1, "-", 1);
 		return (-1);

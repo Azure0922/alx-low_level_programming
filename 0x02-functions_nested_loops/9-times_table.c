@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 /**
  *times_table - check the code
@@ -21,11 +20,15 @@ void times_table(void)
 			int m = i * j;
 			/* m - product */
 
-			scanf("%d", &m);
-			write(1, "%d,  ", 4);
-			if (m > '9')
+			if (m == '0' || m <= '9')
 			{
-				write(1,"%2d, ", 4);
+				write(1, &m, 1);
+				write(1, ",  ", 3);
+			}
+			else if (m > '9')
+			{
+				write(1, &m, 1);
+				write(1, ", ", 2);
 			}
 			j++;
 		}
