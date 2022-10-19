@@ -1,12 +1,12 @@
 #include <unistd.h>
 
 /**
- * main - print
+ * _putchar - print
  *
  * Return: always 0
  */
-int main(void)
+int _putchar(int c)
 {
-	write("_putchar\n");
+	write(1, "_putchar\n", 10);
 	return (0);
 }

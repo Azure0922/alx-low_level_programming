@@ -1,21 +1,11 @@
-#include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - check code
+ * print_alphabet - check code
  *
  * Return: 0, success
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c = 'a';
-
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-	putchar('\n');
-	
-
-	return (0);
+	write(1, "abcdefghijklmnopqrstuvwxyz\n", 28);
 }
