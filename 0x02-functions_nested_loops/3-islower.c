@@ -1,23 +1,21 @@
-#include <ctype.h>
-#include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - check code
+ * _islower - check code
  *
  * Return: 1
  */
-int main(void)
+int _islower(int c)
 {
-	char c;
+	int c;
 
-	scanf("%c", &c);
-	if (isupper(c))
+	if (c <= 'z' && c >= 'a')
+	{
+		write(1, c, sizeof(c));
+		return (1);
+	}
+	else
 	{
 		return (0);
-	}
-	else if (islower(c))
-	{
-		return (1);
 	}
 }
