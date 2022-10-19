@@ -2,30 +2,20 @@
 
 /**
  * _abs - absolute value
- * n - integer
  *
+ * @n: integer
  * Return: 0, success
  */
 int _abs(int n)
 {
 	/* n - integer */
-	if (n >= '0')
+	if (n < '0')
 	{
-		putchar(n);
+		return (n*-1);
 	}
-	else if (n < 0)
+	else
 	{
-		int k, l;
-		k = '-1';
-		l = n * k;
-		/**
-		 * k - abs
-		 * l - product
-		 */
-
-		putchar(l);
-		
-		return (0);
+		return (n);
 	}
-}	
-
+	return (0);
+}

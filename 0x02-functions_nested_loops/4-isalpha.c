@@ -2,8 +2,8 @@
 
 /**
  * _isalpha - check code
- * c - char
- *
+ * 
+ * @c: char
  * Return: 1
  */
 int _isalpha(int c)

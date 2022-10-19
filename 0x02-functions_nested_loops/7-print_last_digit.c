@@ -2,8 +2,8 @@
 
 /**
  * print_last_digit - check the code
- * n - integer
  *
+ * @n: integer
  * Return: value
  */
 int print_last_digit(int n)
@@ -14,7 +14,7 @@ int print_last_digit(int n)
 	}
 	else if (n >= '1' && n <= '9')
 	{
-		write(1, &n, 1);
+		write(1, &n, sizeof(n));
 	}
 	else if (n > '9')
 	{
@@ -22,19 +22,14 @@ int print_last_digit(int n)
 		v = n % 10;
 		/* v - remainder */
 
-		write(1, &v, 1);
+		write(1, &v, sizeof(v));
 	}		
 	else if (n < '0')
 	{
-		int j, k;
-		j = '-1';
-		k = n * j;
-		/**
-		 * j - neg 
-		 * k - abs
-		 */
+		int j = n*-1;
+		/* j - negate */
 
-		write(1, &k, 1);
+		write(1, &j, sizeof(j));
 	}
-	return (v);
+	return (0);
 }
