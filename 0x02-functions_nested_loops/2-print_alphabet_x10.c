@@ -7,8 +7,12 @@
  */
 void print_alphabet_x10(void)
 {
-	for (int i = 0; i <= 9; i++)
+	i = 0;
+
+	while (i < 10)
 	{
 		write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+		i++
 	}
+
 }
