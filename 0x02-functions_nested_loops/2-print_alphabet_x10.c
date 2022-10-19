@@ -1,28 +1,17 @@
-#include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - check code
+ * print_alphabet_x10 - check code
  *
  * Return: 0, success
  */
-int main(void)
+void print_alphabet_x10.c(void)
 {
 	int i = '0';
-	char c;
 
 	while (i < '10')
 	{
-		char c = 'a';
-		
-		while (c <= 'z')
-		{
-			putchar(c);
-			c++;
-		}
+		write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
 	}
-	putchar('\n');
 	i++;
-
-	return (0);
 }
