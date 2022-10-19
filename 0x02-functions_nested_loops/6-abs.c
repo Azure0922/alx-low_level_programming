@@ -1,5 +1,3 @@
-#include "main.h"
-#include <stdio.h>
 #include <unistd.h>
 
 int _abs(int);
@@ -11,6 +9,9 @@ int _abs(int);
  */
 int _abs(int)
 {
-	int r = _abs(n);
-	write(1, r, 
+	int n;
+	int r = abs(n);
+
+	write(1, "%d", sizeof(r));
+}	
 

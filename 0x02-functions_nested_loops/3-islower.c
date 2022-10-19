@@ -8,11 +8,12 @@
 int _islower(int c)
 {
 	int c;
-
+	/* c - char */
+	
 	if (c <= 'z' && c >= 'a')
 	{
-		write(1, "%c", sizeof(c));
 		return (1);
+		write(1, "1", 1);
 	}
 	else
 	{

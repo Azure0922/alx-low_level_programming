@@ -1,16 +1,34 @@
-#include "main.h"
-#include <stdio.h>
-
-void times_table(void);
+#include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0
+ *times_table - check the code
  */
-int main(void)
+void times_table(void)
 {
-	int i = '0', j = '0', m;
+	int i = '0', j;
+	/**
+	 * i - num 1
+	 * j - num 2
+	 */
 
-	
-	
+	while (i <= '9')
+	{
+		j = '0';
+
+		while (j <= '9')
+		{
+			int m = i * j;
+			/* m - product */
+
+			scanf("%d", &m);
+			write(1, "%d,  ", 4);
+			if (m >= '10')
+			{
+				write(1,"%2d, ", 4);
+			}
+			j++;
+		}
+		write(1, "\n", 1);
+		i++;
+	}
+}	

@@ -1,12 +1,14 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - check the code
+ * print_last_digit - check the code
  *
- * Return: Always 0
+ * Return: value
  */
-int main(void)
+int print_last_digit(int n)
 {
+	int n;
+	int v = n % 10;
 
-
+	return (v);
 }
