@@ -10,17 +10,44 @@ int add(int, int);
  */
 int main(void)
 {
+	/**
+	 * x- num 1
+	 * y- num 2
+	 * add - function
+	 * n - sum
+	 */
 	int x, y, n;
 
 	scanf("%d %d", &x, &y);
-	n = x + y
+	n = add(x, y);
 	/**
 	 * x - first number
 	 * y - second number
 	 * n - sum
 	 */
 
-	printf("%d\n", n);
+	fwrite(n, sizeof(n), 1, fp);
 	return (0);
 
+}
+
+/**
+ * add - function
+ * x - num 1
+ * y - num 2
+ *
+ * Return - sum
+ */
+int add(int x, int y)
+{
+	/**
+	 * x - num
+	 * y - num
+	 *
+	 * Return: sum
+	 */
+	int sum;
+
+	sum = x + y;
+	return (sum);
 }
