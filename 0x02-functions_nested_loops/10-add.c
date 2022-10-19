@@ -5,8 +5,8 @@
  *
  * Return: Always 0.
  */
-int add(int, int)
+int add(int x, int y)
 {
-	int x, y, sum = x + y;
-	write(1, sum, sizeof(sum));
+	int sum = x + y;
+	write(1, "%d", sizeof(sum));
 }

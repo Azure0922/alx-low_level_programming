@@ -11,7 +11,7 @@ int _islower(int c)
 
 	if (c <= 'z' && c >= 'a')
 	{
-		write(1, c, sizeof(c));
+		write(1, "%c", sizeof(c));
 		return (1);
 	}
 	else
