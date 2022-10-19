@@ -22,12 +22,12 @@ void times_table(void)
 
 			if (m == '0' || m <= '9')
 			{
-				write(1, &m, 1);
+				return (m);
 				write(1, ",  ", 3);
 			}
 			else if (m > '9')
 			{
-				write(1, &m, 1);
+				return (m);
 				write(1, ", ", 2);
 			}
 			j++;
@@ -35,4 +35,4 @@ void times_table(void)
 		write(1, "\n", 1);
 		i++;
 	}
-}	
+}

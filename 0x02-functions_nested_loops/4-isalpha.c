@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - check code
- * 
+ *
  * @c: char
  * Return: 1
  */

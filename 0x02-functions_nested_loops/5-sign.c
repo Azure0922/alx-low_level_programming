@@ -2,8 +2,9 @@
 
 /**
  * print_sign - function
- * 
+ *
  * @n: integer
+ * Return: 0
  */
 int print_sign(int n)
 {
@@ -23,5 +24,4 @@ int print_sign(int n)
 		write(1, "-", 1);
 		return (-1);
 	}
-	return (0);
 }

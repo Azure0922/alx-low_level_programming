@@ -15,29 +15,19 @@ void jack_bauer(void)
 
 	while (n < '3')
 	{
-		write(1, &n, 1);
-
 		m = '0';
-		/* m - hour 2 */
 
 		while (m <= '9')
 		{
-			write(1, &m, 1);
-			write(1, ":", 1);
-
 			x = '0';
-			/* x - min */
 
 			while (x < '6')
 			{
-				write(1, &x, 1);
-
 				y = '0';
-				/* y - min 2 */
-				
+
 				while (y <= '9')
 				{
-					write(1, &y, 1);
+					return (nm:xy);
 					write(1, "\n", 1);
 					y++;
 				}
