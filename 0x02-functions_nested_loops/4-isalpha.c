@@ -1,21 +1,19 @@
-#include <ctype.h>
-#include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - check code
+ * _isalpha - check code
+ * c - char
  *
  * Return: 1
  */
-int main(void)
+int _isalpha(int c);
 {
-	char c:
-
 	scanf("%c", &c);
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
-		write(1, "1", 1);
+		write(1, "%c", 1);
 	}
 	else
 	{

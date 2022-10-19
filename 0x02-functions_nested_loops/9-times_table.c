@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  *times_table - check the code
@@ -22,7 +23,7 @@ void times_table(void)
 
 			scanf("%d", &m);
 			write(1, "%d,  ", 4);
-			if (m >= '10')
+			if (m > '9')
 			{
 				write(1,"%2d, ", 4);
 			}
