@@ -9,4 +9,5 @@
 void print_number(int n)
 {
 	write(fd, &n, sizeof(int));
+	/* fd - file descriptor */
 }
