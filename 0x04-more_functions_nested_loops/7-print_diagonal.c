@@ -14,12 +14,14 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		int i = 1;
+		int i = 0;
 		/* i - line */
 
-		for (i = 1; i <= n; i++)
+		while  (i <= n)
 		{
+			write(1, " "
 			write(1, "\\\n", 2);
 		}
+		i++;
 	}
 }

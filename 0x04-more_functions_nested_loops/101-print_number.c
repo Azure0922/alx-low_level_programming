@@ -8,5 +8,5 @@
  */
 void print_number(int n)
 {
-	write(1, "%u",sizeof(n));
+	write(fd, &n, sizeof(int));
 }

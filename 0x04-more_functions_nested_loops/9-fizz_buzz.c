@@ -16,9 +16,13 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((c % 5 == 0) && !(c % 3 == 0))
+		else if ((c % 5 == 0) && !(c % 3 == 0) && !(c % 100 == 0))
 		{
 			printf("Buzz ");
+		}
+		else if (c % 100 == 0)
+		{
+			printf("Buzz");
 		}
 		else if (c % 3 == 0 && !(c % 5 == 0))
 		{

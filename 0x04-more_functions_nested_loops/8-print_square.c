@@ -15,7 +15,7 @@ void print_square(int size)
 	else
 	{
 		int y = 1, x;
-		/* y - line */ 
+		/* y - line */
 
 		while (y <= size)
 		{
