@@ -30,5 +30,4 @@ void print_square(int size)
 			y++;
 		}
 	}
-	return (0);
 }

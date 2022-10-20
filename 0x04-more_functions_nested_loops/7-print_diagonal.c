@@ -22,5 +22,4 @@ void print_diagonal(int n)
 			write(1, "\\\n", 2);
 		}
 	}
-	retutn (0);
 }
