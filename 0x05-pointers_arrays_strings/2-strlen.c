@@ -10,6 +10,10 @@
  */
 int _strlen(char *s)
 {
-	write(1, s, strlen(s) + 1);
-	return (s);
+	int c;
+	/* c - length */
+
+	c = strlen(s);
+
+	return (c);
 }

@@ -20,6 +20,7 @@ void puts_half(char *str)
 
 	for (i = 0; i > m; i++)
 	{
-		write(1, str, m);
+		write(1, str, strlen(str) - m);
+		write(1, "\n", 1);
 	}
 }

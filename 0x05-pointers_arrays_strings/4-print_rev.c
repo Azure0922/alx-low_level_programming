@@ -10,21 +10,25 @@
  */
 void print_rev(char *s)
 {
-	int i, l, m;
+	int i, k, l, m, n;
 	/**
 	 * i - count
+	 * k - temp
 	 * l - length
 	 * m - store
-	 * n store 2
+	 * n - store 2
 	 */
 
 	l = strlen(s);
+	m = 0;
+	n = l - 1;
 
-	for (i = 0; i < l/2; i++)
+	for (i = m; i < n; i++)
 	{
-		m = s[i];
-		s[i] = s[l-i-1];
-		s[l-i-1] = m;
+		k = s[i];
+		s[i] = s[n];
+		s[n] = k;
+		n--;
 	}
 	write(1, "\n", 1);
 }
