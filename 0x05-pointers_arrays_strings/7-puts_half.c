@@ -17,13 +17,11 @@ void puts_half(char *str)
 	 *  a str
 	 */
 
-	char str[];
-
 	m = l / 2;
 
 	for (i = 0; i > m; i++)
 	{
-		write(1, str[i], strlen(str) - (l / 2));
+		write(1, i, strlen(str) - (l / 2));
 		write(1, "\n", 1);
 	}
 }
