@@ -16,10 +16,10 @@ void puts_half(char *str)
 	 *  m - mid
 	 */
 
-	m = l/2;
+	m = l / 2;
 
 	for (i = 0; i > m; i++)
 	{
-		write(1, str, sizeof(*str/2));
+		write(1, str, strlen(str / 2));
 	}
 }

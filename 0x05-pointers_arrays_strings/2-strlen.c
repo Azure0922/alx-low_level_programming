@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 
 /**
  * _strlen - function
@@ -8,12 +10,6 @@
  */
 int _strlen(char *s)
 {
-	int c;
-	/* c - length */
-
-	for (c = 0; s[c] != '\0'; ++c)
-	{
-		return (c);
-	}
+	write(1, s, strlen(s));
 	return (c);
 }

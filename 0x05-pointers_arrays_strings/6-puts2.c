@@ -20,5 +20,5 @@ void puts2(char *str)
 
 	for (i = 0; i < m; i += 2)
 	{
-		write(1, str, sizeof(*str/2))
+		write(1, str, strlen(str / 2));
 }
