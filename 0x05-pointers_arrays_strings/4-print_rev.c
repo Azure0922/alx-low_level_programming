@@ -15,7 +15,10 @@ void print_rev(char *s)
 	 * i - count
 	 * l - length
 	 * m - store
+	 * n store 2
 	 */
+
+	l = strlen(s);
 
 	for (i = 0; i < l/2; i++)
 	{

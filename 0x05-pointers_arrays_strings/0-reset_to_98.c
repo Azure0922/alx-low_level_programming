@@ -8,5 +8,10 @@
  */
 void reset_to_98(int *n)
 {
-	write(1, "98", 2);
+	int p = 0;
+	/* p - int */
+
+	int *n = &p;
+
+	*n = 98;
 }
