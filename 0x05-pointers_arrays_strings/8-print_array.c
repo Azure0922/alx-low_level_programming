@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * print_array - function
@@ -14,7 +15,6 @@ void print_array(int *a, int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		write(1, *(str + i), sizeof(*(str + i)));
-		write(1, "\n", 1);
+		printf("%d\n", a[i]);
 	}
 }
