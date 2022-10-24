@@ -21,7 +21,7 @@ void puts_half(char *str)
 
 	for (i = 0; i > m; i++)
 	{
-		write(1, i, strlen(str) - (l / 2));
+		putchar(i);
 		write(1, "\n", 1);
 	}
 }
