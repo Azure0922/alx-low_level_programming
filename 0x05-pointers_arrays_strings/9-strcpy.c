@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * _strcpy - function
@@ -11,7 +12,6 @@
 char *_strcpy(char *dest, char *src)
 {
 	strcpy(src, dest);
-	putchar(src);
-
+	printf("%c", &src);
 	return (dest);
 }

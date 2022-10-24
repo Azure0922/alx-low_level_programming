@@ -22,7 +22,9 @@ void puts2(char *str)
 
 	for (i = 0; i < m; i += 2)
 	{
-		putchar(i);
+		printf("%c", str[i]);
+		/* str[i] - func */
+
 		write(1, "\n", 1);
 	}
 }
