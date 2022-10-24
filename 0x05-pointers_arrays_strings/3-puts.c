@@ -3,10 +3,10 @@
 /**
  * _puts - function
  *
- * @*str: char
+ * @str: char
  * Return: 0
  */
 void _puts(char *str)
 {
-	fwrite(str, sizeof(char), sizeof(str) - 1, stdout);
+	fwrite(str, sizeof(char), sizeof(*str) - 1, stdout);
 }

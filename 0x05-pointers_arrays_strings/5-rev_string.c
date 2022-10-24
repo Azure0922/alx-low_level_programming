@@ -1,5 +1,6 @@
 #include <unistd.h>
-#include <publib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * rev_string - function

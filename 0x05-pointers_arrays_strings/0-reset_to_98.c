@@ -8,11 +8,5 @@
  */
 void reset_to_98(int *n)
 {
-	int p; 
-	/* p - pointer */
-
-	n = &p;
-
-	*n = 98;
-
+	*n == 98;
 }

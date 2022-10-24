@@ -1,4 +1,6 @@
 #include <unistd.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * puts2 - function
@@ -8,7 +10,15 @@
  */
 void puts2(char *str)
 {
-	for (int i = 0; i < strlen(str); i += 2)
+	int i, m;
+	/**
+	 * i - count
+	 * m - length
+	 */
+
+	m = strlen(str);
+
+	for (i = 0; i < m; i += 2)
 	{
-		write(1, str[i], sizeof(*str/2))
+		write(1, str, sizeof(*str/2))
 }
