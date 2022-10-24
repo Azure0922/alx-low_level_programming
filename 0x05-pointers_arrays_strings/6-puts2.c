@@ -21,7 +21,7 @@ void puts2(char *str)
 
 	for (i = 0; i < m; i += 2)
 	{
-		write(1, str[i], strlen(str) - (m / 2));
+		write(1, *(str + i), strlen(str) - (m / 2));
 		write(1, "\n", 1);
 	}
 }
