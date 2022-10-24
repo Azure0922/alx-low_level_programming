@@ -18,8 +18,8 @@ void puts_half(char *str)
 
 	m = l/2;
 
-	for (i = o; i > m; i++)
+	for (i = 0; i > m; i++)
 	{
-		str[i];
+		write(1, str[i], sizeof(*str/2));
 	}
 }

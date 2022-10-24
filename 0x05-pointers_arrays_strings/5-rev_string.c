@@ -1,13 +1,13 @@
 #include <unistd.h>
-#include <string.h>
+#include <publib.h>
 
 /**
  * rev_string - function
  * 
  * @s - char
- * Return: 0
+ * Return: nil
  */
 void rev_string(char *s)
 {
-	revstr(s);
+	strrev(s);
 }

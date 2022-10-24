@@ -1,9 +1,9 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * _strlen - function
  *
- * @*s: char
+ * @s: char
  * Return: c
  */
 int _strlen(char *s)
@@ -11,7 +11,8 @@ int _strlen(char *s)
 	int c;
 	/* c - length */
 
-	c = sizeof(s);
-
-	return (c);
+	for (c = 0; s[c] != '\0'; ++c)
+	{
+		return (c);
+	}
 }

@@ -3,16 +3,16 @@
 /**
  * reset_to_98 - function
  * 
- * @*n: pointer
+ * @n: pointer
  * Return: 0
  */
 void reset_to_98(int *n)
 {
-	int *p; 
-	/* *p - pointer */
+	int p; 
+	/* p - pointer */
 
-	p = &n;
+	n = &p;
 
-	*p = 98;
+	*n = 98;
 
 }

@@ -8,18 +8,7 @@
  */
 void puts2(char *str)
 {
-	while (*str)
+	for (int i = 0; i < strlen(str); i += 2)
 	{
-		int i, j;
-		/**
-		 * i - int
-		 * j - int
-		 */
-
-		for (i = 0; i % 2 == 0; i++;)
-		{
-			odd[j++] = *str;
-		}
-		str++;
-	}
+		write(1, str[i], sizeof(*str/2))
 }

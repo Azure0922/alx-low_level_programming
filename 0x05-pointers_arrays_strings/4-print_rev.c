@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <string.h>
+#include <publib.h>
 
 /**
  * print_rev - function
@@ -9,6 +9,6 @@
  */
 void print_rev(char *s)
 {
-	revstr(s);
+	strrev(s);
 	write(1, "\n", 1);
 }
