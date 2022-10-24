@@ -4,8 +4,8 @@
 
 /**
  * rev_string - function
- * 
- * @s - char
+ *
+ * @s: char
  * Return: nil
  */
 void rev_string(char *s)
