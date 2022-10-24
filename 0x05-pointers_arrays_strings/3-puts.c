@@ -10,8 +10,5 @@
  */
 void _puts(char *str)
 {
-	{
-		fwrite(str, sizeof(char), strlen(str), stdout);
-	}
-	write(1, "\n", 1);
+	fwrite(str, sizeof(char), strlen(str), stdout);
 }
