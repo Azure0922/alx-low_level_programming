@@ -10,8 +10,40 @@
  */
 char *leet(char *c)
 {
-	if (c = 'a' || c = 'A')
+	int i = 0, l;
+	/**
+	 * i - count
+	 * l - length
+	 */
+
+	l = strlen(c);
+
+	for (i = 0; i < l; i++)
 	{
-		return (4);
+		if (c[i] = 'a' || c[i] = 'A')
+		{
+			c[i] = '4';
+		}
+		else if (c[i] = 'e' || c[i] = 'E')
+		{
+			c[i] = '3';
+		}
+		else if (c[i] = 'o' || c[i] = 'O')
+		{
+			c[i] = '0';
+		}
+		else if (c[i] = 'l' || c[i] = 'L')
+		{
+			c[i] = '1';
+		}
+		else if (c[i] = 't' || c[i] = 'T')
+		{
+			c[i] = '7';
+		}
+		else
+		{
+			c[i] = c[i];
+		}
 	}
+		return (0);
 }
