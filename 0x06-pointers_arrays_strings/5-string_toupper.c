@@ -19,9 +19,9 @@ char *string_toupper(char *c)
 		{
 			c[i] = c[i] - 32;
 		}
-		else 
+		else
 		{
-			c[i] = c[i];	
+			c[i] = c[i];
 		}
 	}
 	return (c);
