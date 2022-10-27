@@ -11,8 +11,10 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
-	write(1, dest, strlen(dest));
+	int r;
+	/* r - return */
 
-	return (0);
+	r = strcat(dest, src);
+
+	return (r);
 }
