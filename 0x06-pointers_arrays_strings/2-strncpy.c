@@ -12,8 +12,8 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	strncpy(dest, src, n);
-	write(1, dest, strlen(dest));
+	char *a = dest;
 
-	return (0);
+	while (*a++ = (*src += n));
+	return (dest);
 }
