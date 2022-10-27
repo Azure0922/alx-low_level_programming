@@ -11,10 +11,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int r;
-	/* r - return */
+	strcat(dest, src);
+	printf("%s", dest);
 
-	r = strcat(dest, src);
-
-	return (r);
+	return (0);
 }
