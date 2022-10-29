@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * print_last_digit - check the code
@@ -10,13 +11,13 @@ int print_last_digit(int n)
 {
 	if (n == '0')
 	{
-		return (0);
 		write(1, "0", 1);
+		return (0);
 	}
 	else if (n >= '1' && n <= '9')
 	{
+		printf("%d", n);
 		return (n);
-		write(1, &n, sizeof(n));
 	}
 	else if (n > '9')
 	{
@@ -25,11 +26,23 @@ int print_last_digit(int n)
 		v = n % 10;
 		/* v - remainder */
 
+		printf("%d", v);
 		return (v);
-		write(1, &v, sizeof(v));
 	}
 	else if (n < '0')
 	{
-		return (n * -1);
-		write(1, &j, sizeof(j));
+		int j, k;
+		/**
+		 *  j - int
+		 *  k - rem
+		 */
+
+		j = n * -1;
+
+		k = j % 10;
+
+		printf("%d", k);
+		return (k);
+	}
+	return (0);
 }
