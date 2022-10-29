@@ -9,11 +9,7 @@
  */
 int print_last_digit(int n)
 {
-	if (n = '0')
-	{
-		printf("%d%d", n, n);
-	}
-	else if (n >= '1' && n <= '9')
+	if (n >= '1' && n <= '9')
 	{
 		printf("%d%d", n, n);
 	}
@@ -39,6 +35,10 @@ int print_last_digit(int n)
 		k = j % 10;
 
 		printf("%d%d", k, k);
+	}
+	else
+	{
+		printf("%d%d", n, n);
 	}
 	return (0);
 }
