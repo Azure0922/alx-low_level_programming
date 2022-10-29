@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * print_to_98 - function
@@ -14,14 +15,19 @@ void print_to_98(int n)
 	 * i - list
 	 */
 	
-	for (i = n; i <= 98; i++)
+	if (n < 98)
 	{
-		write(1, &i, sizeof(i));
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d", i);
+		}
 	}
-
-	for (i = n; i >= 98; i--)
+	else if (n > 98)
 	{
-		write(1, &i, sizeof(i));
+		for (i = n; i >= 98; i--)
+		{
+			printf("%d", i);
+		}
 	}
 	return (0);
 }

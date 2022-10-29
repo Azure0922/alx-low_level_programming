@@ -14,8 +14,8 @@ int main(void)
 	while (i += 50)
 	{
 		i = i + i;
-		putchar(",");
-		putchar(" ");
+		printf(",");
+		printf(" ");
 		i++;
 	}
 	return (0);

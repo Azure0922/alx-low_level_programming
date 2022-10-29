@@ -11,13 +11,11 @@ int print_last_digit(int n)
 {
 	if (n == '0')
 	{
-		write(1, "0", 1);
-		return (0);
+		printf("%d%d", n, n);
 	}
 	else if (n >= '1' && n <= '9')
 	{
-		printf("%d", n);
-		return (n);
+		printf("%d%d", n, n);
 	}
 	else if (n > '9')
 	{
@@ -26,8 +24,7 @@ int print_last_digit(int n)
 		v = n % 10;
 		/* v - remainder */
 
-		printf("%d", v);
-		return (v);
+		printf("%d%d", v, v);
 	}
 	else if (n < '0')
 	{
@@ -41,8 +38,7 @@ int print_last_digit(int n)
 
 		k = j % 10;
 
-		printf("%d", k);
-		return (k);
+		printf("%d%d", k, k);
 	}
 	return (0);
 }

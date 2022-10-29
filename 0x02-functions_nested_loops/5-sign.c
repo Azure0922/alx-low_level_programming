@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * print_sign - function
@@ -16,7 +17,7 @@ int print_sign(int n)
 	}
 	else if (n == '0')
 	{
-		write(1, "0", 1);
+		printf("0");
 		return (0);
 	}
 	else if (n < '0')
