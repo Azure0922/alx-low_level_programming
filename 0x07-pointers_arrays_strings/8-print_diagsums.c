@@ -21,6 +21,8 @@ void print_diagsums(int *a, int size)
 	{
 		for (c =0; c < 2; c++)
 		{
+			*a = b + c;
+
 			printf("%d", *a);
 		}
 	}
