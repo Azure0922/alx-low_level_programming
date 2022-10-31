@@ -5,8 +5,8 @@
 /**
  * print_diagsums - function
  *
- * @a: char
- * @size: char
+ * @a: int
+ * @size: int
  * Return: nil
  */
 void print_diagsums(int *a, int size)
@@ -19,19 +19,9 @@ void print_diagsums(int *a, int size)
 
 	for (b = 0; b < 2; b++)
 	{
-		c = 0;
-		
-		while (c < 2)
+		for (c =0; c < 2; c++)
 		{
-			while (b != c)
-			{
-				int r;
-				/* r - sum */
-
-				r = b + c;
-			}
-			c++;
+			printf("%d", (a[b][c] + a[c][b]));
 		}
 	}
 }
-
