@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 	{
 		for (c =0; c < 2; c++)
 		{
-			printf("%d", (a[b][c] + a[c][b]));
+			printf("%d", *a);
 		}
 	}
 }
