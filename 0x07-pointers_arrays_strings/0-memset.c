@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-int _putchar(int c);
 
 /**
  * _memset - function
@@ -14,8 +13,7 @@ int _putchar(int c);
 char *_memset(char *s, char b, unsigned int n)
 {
 	memset(s, b, n);
-
-	_putchar(s);
+	printf("%s", *s);
 
 	return (0);
 }
