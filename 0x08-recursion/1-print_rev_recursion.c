@@ -10,21 +10,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int l, m, n, p;
-	/**
-	 * l - length
-	 * m - string
-	 * n - count
-	 */
-
-	l = strlen(s);
-
-	p = l / 2;
-
-	for (n = 0; n < p; n++)
+	if (*s)
 	{
-		m = s[n];
-		s[n] = s[l - n - 1];
-		s[l - n - 1] = m;
+		_print_rev_recursion(s + 1);
+		printf("%c", *s);
 	}
 }

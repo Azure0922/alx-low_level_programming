@@ -10,10 +10,29 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i;
-	/* i - res */
+	if (n > 0)
+	{
+		int i;
+		/* i - int */
 
-	i = sqrt(n);
+		i = 1;
 
-	return (i);
+		while (i * i <= n)
+		{
+			if (i * i == n)
+			{
+				return (i);
+			}
+			else
+			{
+				return (-1);
+			}
+			i++;
+		}
+	}
+	else
+	{
+		return (-1);
+	}
+	return (0);
 }
