@@ -25,12 +25,13 @@ int main(int argc, char *argv[])
 		 * k - argv 2
 		 */
 
-		j = argv[1];
-		k = argv[2];
+		j == argv[1];
+		k == argv[2];
 
 		i =(j * k);
 
 		printf("%d\n", i);
 	}
+	(void) argc;
 	return (0);
 }
