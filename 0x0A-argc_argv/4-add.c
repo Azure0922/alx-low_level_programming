@@ -17,25 +17,25 @@ int main(int argc, char *argv[])
 	}
 	else if (argc > 1)
 	{
-		if (isdigit(argv[]))
-		{
 			int i, j = 0;
 			/**
 			 * i - int
 			 * j - sum
 			 */
 
-			for (i = 0; i < argc; i++)
+		for (i = 0; i < argc; i++)
+		{
+			if (isdigit(argv[i]))
 			{
 				j += atoi(argv[i]);
+				printf("%d", j);
 			}
-			printf("%d", j);
-		}
-		else
-		{
-			printf("ERROR");
+			else
+			{
+				printf("ERROR");
 
-			return (1);
+				return (1);
+			}
 		}
 	}
 	return (0);
