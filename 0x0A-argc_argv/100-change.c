@@ -18,49 +18,58 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int i, r;
+		int i, j, k, l, m, n, o, p, q, r;
 		/**
 		 * i - atoi
+		 * j - rem
+		 * k - div
+		 * l - rem
+		 * m - div
+		 * n - rem
+		 * o - div
+		 * p - rem
+		 * q - div
 		 * r - rem
 		 */
 
-		i = atoi(argv[1]);
-		r = i % 25;
 
-		if (r == 0)
+		i = atoi(argv[1]);
+		j = i % 25;
+		k = i / 25;
+		l = j % 10;
+		m = j / 10;
+		n = l % 5;
+		o = l / 5;
+		p = n % 2;
+		q = n / 2;
+		r = m + o + q;
+
+		if (j == 0)
 		{
-			printf("%d\n", i / 25);
+			printf("%d\n", k);
 		}
 		else
 		{
-			int j;
-			/* j - rem 2 */
-
-			j = r % 10;
-
-			if (j == 0)
+			if (l == 0)
 			{
-				printf("%d\n", (i / 25) + (r / 10));
+				printf("%d\n", k + m);
 			}
 			else
 			{
-				int k;
-				/* k - rem 3 */
-
-				k = j % 5;
-
-				if (k == 0)
+				if (n == 0)
 				{
-					printf("%d\n", (i / 25) + (r / 10) + (j / 5));
+					printf("%d\n", k + m + o);
 				}
 				else
 				{
-					int l;
-					/* l - rem */
-
-					l = k % 2;
-
-					printf("%d\n", l);
+					if (p == 0)
+					{
+						printf("%d\n", k + m + o + q);
+					}
+					else
+					{
+						printf("%d\n", k + r + 1);
+					}
 				}
 			}
 		}
