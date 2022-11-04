@@ -18,20 +18,18 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int i, j, k;
+		int i, j = 0;
 		/**
 		 * i - mul
 		 * j - argv 1
 		 * k - argv 2
 		 */
 
-		j == argv[1];
-		k == argv[2];
-
-		i =(j * k);
-
-		printf("%d\n", i);
+		for (i = 1; i < argc; i++)
+		{
+			j *= atoi(argv[i]);
+		}
+		printf("%d\n", j);
 	}
-	(void) argc;
 	return (0);
 }
