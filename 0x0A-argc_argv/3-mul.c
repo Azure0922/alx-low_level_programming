@@ -18,16 +18,19 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int i;
-		/* i - mul */
+		int i, j, k;
+		/**
+		 * i - mul
+		 * j - argv 1
+		 * k - argv 2
+		 */
 
-		i =(argv[1] * argv[2]);
+		j = argv[1];
+		k = argv[2];
+
+		i =(j * k);
 
 		printf("%d\n", i);
-	}
-	else if (argc > 3)
-	{
-		return (1);
 	}
 	return (0);
 }
