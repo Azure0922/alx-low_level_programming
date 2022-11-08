@@ -37,9 +37,9 @@ char *argstostr(int ac, char **av)
 		{
 			strcat(b, " ");
 			strcat(b, av[i]);
-			printf("%s\n", b);
 		}
 	}
+	printf("%s\n", b);
 	free(b);
 
 	return (0);
