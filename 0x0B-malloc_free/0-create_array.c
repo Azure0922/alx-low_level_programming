@@ -10,10 +10,8 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char s[size];
-	/* s - char */
-
-	s = malloc(sizeof(char) * size);
+	char *s = malloc(sizeof(char) * size);
+	/* s - array */
 
 	if (size == 0)
 	{
@@ -30,12 +28,10 @@ char *create_array(unsigned int size, char c)
 
 		for (i = 0; i < size; i++)
 		{
-			s[i] = a;
+			s[i] = c;
 			printf("%c", s[i]);
 		}
 	}
-	(void) c;
-
 	free(s);
 	return (0);
 }

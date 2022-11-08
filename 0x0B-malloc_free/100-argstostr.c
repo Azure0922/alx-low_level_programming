@@ -15,6 +15,8 @@ char *argstostr(int ac, char **av)
 	/* i - int */
 	int a = 1;
 	/* a - int */
+	char *b;
+	/* b - mem */
 
 	if ((ac == 0) || (av == NULL))
 	{
@@ -26,13 +28,12 @@ char *argstostr(int ac, char **av)
 		{
 			a += (strlen(av[i]) + 1);
 		}
-	
-		char *b = (char *)malloc(sizeof(char) * a);
-		/* b - memory */
+		
+		b = (char *)malloc(sizeof(char) * a);
 
 		strcpy(b, av[1]);
 
-		for (i = 2; i < ac; +=i)
+		for (i = 2; i < ac; ++i)
 		{
 			strcat(b, " ");
 			strcat(b, av[i]);

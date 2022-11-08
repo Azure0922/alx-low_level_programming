@@ -13,9 +13,19 @@ int **alloc_grid(int width, int height);
  */
 void free_grid(int **grid, int height)
 {
-	int *a = **alloc_grid(int width, int height);
-	/* a - free */
+	void **a = grid;
+	/* a - void */
 
+	int i;
+	/* i - int */
+
+	for (i = 0; i < height; i++)
+	{
+		if (a[i])
+		{
+			free(a[i]);
+		}
+	}
 	free(a);
 	return (0);
 }
