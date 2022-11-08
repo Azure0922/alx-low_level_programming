@@ -10,7 +10,7 @@
  */
 char **strtow(char *str)
 {
-	if ((str == NULL) || (strcmp(str, " ") == 0))
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -18,8 +18,12 @@ char **strtow(char *str)
 	{
 		char *a = strtok(str, " ");
 		/* a - char */
-		
-		a = (char *)malloc(sizeof(*a));
+		int i;
+		/* i - len */
+
+		i = strlen(str);
+
+		a = (char *)malloc(sizeof(char) * i);
 		printf("%s\n", a);
 
 		free(a);
