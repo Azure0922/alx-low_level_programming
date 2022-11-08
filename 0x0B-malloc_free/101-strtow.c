@@ -10,14 +10,20 @@
  */
 char **strtow(char *str)
 {
-	char *a = strtok(str, " ");
-	/* a - char */
-
-	while (a != NULL)
+	if ((str == NULL) || (str == " "))
 	{
-		printf("%s\n", a);
+		return (NULL);
 	}
-	a = strtok(NULL, " ");
+	else
+	{
+		char *a = strtok(str, " ");
+		/* a - char */
+		
+		a = (char *)malloc(sizeof(*a));
+		printf("%s\n", a);
+
+		free(a);
+	}
 
 	return (0);
 }

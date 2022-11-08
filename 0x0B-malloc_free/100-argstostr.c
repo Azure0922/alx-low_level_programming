@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 		{
 			a += (strlen(av[i]) + 1);
 		}
-		
+
 		b = (char *)malloc(sizeof(char) * a);
 
 		strcpy(b, av[1]);
@@ -37,8 +37,8 @@ char *argstostr(int ac, char **av)
 		{
 			strcat(b, " ");
 			strcat(b, av[i]);
+			printf("%s\n", b);
 		}
-		printf("%s\n", b);
 	}
 	free(b);
 
