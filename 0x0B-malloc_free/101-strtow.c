@@ -10,7 +10,7 @@
  */
 char **strtow(char *str)
 {
-	if ((strcmp(str, NULL) == 0) || (strcmp(str, " ") == 0))
+	if ((str == NULL) || (strcmp(str, " ") == 0))
 	{
 		return (NULL);
 	}

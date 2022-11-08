@@ -33,13 +33,16 @@ char *argstostr(int ac, char **av)
 
 		strcpy(b, av[1]);
 
-		for (i = 2; i < ac; ++i)
+		while (i < ac)
 		{
 			strcat(b, " ");
 			strcat(b, av[i]);
+
+			printf("%s", b);
+			++i;
 		}
+		printf("\n");
 	}
-	printf("%s\n", b);
 	free(b);
 
 	return (0);
