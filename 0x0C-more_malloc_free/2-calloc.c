@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	int *b;
 	/* b  - int */
 
-	b = (int *)malloc(size * sizeof(int));
+	b = (int *)calloc(nmemb, size * sizeof(int));
 
 	if (b == NULL)
 	{
