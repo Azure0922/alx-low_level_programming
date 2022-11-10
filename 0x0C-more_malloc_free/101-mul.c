@@ -14,29 +14,23 @@ int main(int argc, char **argv)
 	if ((argc < 3) || (argc > 3))
 	{
 		printf("ERROR\n");
-		printf("98");
+		printf("98\n");
 		exit(1);
 	}
 	else if (argc == 3)
 	{
 		if ((isdigit(argv[1])) && (isdigit(argv[2])))
 		{
-			int i;
-			/* i - int */
+			unsigned long int j;
+			/* j - int */
 
-			for (i = 2; i <= argc; i++)
-			{
-				unsigned long long int j;
-				/* j - int */
-
-				j *= atoi(argv[1]);
-			}
-			printf("%llu", j);
+			j = atoi(argv[1]) * atoi(argv[2]);
+			printf("%lu", j);
 		}
 		else
 		{
 			printf("ERROR\n");
-			printf("98");
+			printf("98\n");
 			exit(1);
 		}
 	}
