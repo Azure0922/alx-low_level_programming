@@ -11,7 +11,7 @@
 int *array_range(int min, int max)
 {
 	int *k, n;
-	/** 
+	/**
 	 * n - int
 	 * k - int
 	 */
@@ -39,5 +39,5 @@ int *array_range(int min, int max)
 		printf("\n");
 	}
 	free(k);
-	return (0);
+	return (k);
 }

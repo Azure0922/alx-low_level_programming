@@ -33,5 +33,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
+	free(s1);
 	return (0);
 }
