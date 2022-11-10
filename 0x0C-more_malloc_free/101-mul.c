@@ -21,16 +21,12 @@ int main(int argc, char **argv)
 	{
 		if ((isdigit(argv[1])) && (isdigit(argv[2])))
 		{
-			int m, j;
+			int m;
 			/**
 			 * m - seg
 			 * j - mul
 			 */
 
-			for (m = 1; m <= 2; m++)
-			{
-				scanf("%d", *atoi(argv[m]));
-			}
 			j = atoi(argv[1]) * atoi(argv[2]);
 			printf("%d", j);
 		}
