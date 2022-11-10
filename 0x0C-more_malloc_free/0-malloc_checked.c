@@ -9,11 +9,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	b = (unsigned int)malloc(sizeof(b));
+	int *c = (int *)malloc(sizeof(b));
+	/* c - int */
 
-	if (b == NULL)
+	if (c == NULL)
 	{
 		printf("98\n");
 		exit(1);
 	}
+	return (0);
 }
