@@ -14,8 +14,7 @@ int main(int argc, char **argv)
 	if ((argc < 3) || (argc > 3))
 	{
 		printf("ERROR\n");
-		printf("98\n");
-		exit(1);
+		exit(98);
 	}
 	else if (argc == 3)
 	{
@@ -33,8 +32,7 @@ int main(int argc, char **argv)
 		else
 		{
 			printf("ERROR\n");
-			printf("98\n");
-			exit(1);
+			exit(98);
 		}
 	}
 	return (0);
