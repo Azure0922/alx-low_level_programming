@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	{
 		if ((isdigit(argv[1])) && (isdigit(argv[2])))
 		{
-			int m;
+			int j;
 			/**
 			 * m - seg
 			 * j - mul
