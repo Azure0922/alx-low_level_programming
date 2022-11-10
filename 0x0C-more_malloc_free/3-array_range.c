@@ -10,14 +10,14 @@
  */
 int *array_range(int min, int max)
 {
-	int n;
+	int *k, n;
 	/** 
 	 * n - int
 	 * k - int
 	 */
 
 	n = max - min + 2;
-	int **k = (int *)malloc(sizeof(n));
+	k = (int *)malloc(sizeof(n));
 
 	if ((k == NULL) || (min > max))
 	{
@@ -30,11 +30,11 @@ int *array_range(int min, int max)
 
 		for (i = min; i <= max; i++)
 		{
-			scanf("%d", k + i);
+			scanf("%d", (k + i));
 		}
 		for (i = min; i <= max; i++)
 		{
-			printf("%d ", *(k + i);
+			printf("%d ", *(k + i));
 		}
 		printf("\n");
 	}
