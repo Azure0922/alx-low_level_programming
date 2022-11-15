@@ -21,13 +21,5 @@ typedef struct dog
 
 void free_dog(dog_t *d)
 {
-	void *p;
-	/* p - heap */
-
-	p = malloc(sizeof(*d));
-
-	free(d->name);
-	free(d->age);
-	free(d->owner);
-	free(p);
+	free(d);
 }
