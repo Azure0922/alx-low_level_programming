@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
-
 /**
  * init_dog - func
  * struct dog - func
@@ -21,6 +14,13 @@ struct dog
  *
  * Description: this
  */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	strcpy(d->name, name);

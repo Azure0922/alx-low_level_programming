@@ -22,15 +22,18 @@ typedef struct dog
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog = malloc(sizeof(dog_t));
+	void *p;
+	/* p - void */
 
-	if (new_dog == NULL)
+	p  = malloc(sizeof(dog_t));
+
+	if (p == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(new_dog->name, name);
-	new_dog->age = age;
-	strcpy(new_dog->owner, owner);
+	strcpy(p->name, name);
+	p->age = age;
+	strcpy(p->owner, owner);
 
-	return (new_dog);
+	return (p);
 }

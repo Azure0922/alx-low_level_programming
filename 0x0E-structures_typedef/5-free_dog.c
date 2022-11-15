@@ -1,12 +1,5 @@
 #include <stdlib.h>
 
-typedef struct dog
-{
-	char  *name;
-	float age;
-	char *owner;
-} dog_t;
-
 /**
  * free_dog - func
  * struct dog - func
@@ -19,10 +12,22 @@ typedef struct dog
  *
  * Description: this
  */
+typedef struct dog
+{
+	char  *name;
+	float age;
+	char *owner;
+} dog_t;
+
 void free_dog(dog_t *d)
 {
-	free(d->name);
-	free(d->age);
-	free(d->owner);
-	free(d);
+	void *p;
+	/* p - heap */
+
+	p = malloc(sizeof(*d));
+
+	free(p->name);
+	free(p->age);
+	free(p->owner);
+	free(p);
 }

@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-struct dog
-{
-	char *name;
-	float age;
-	char *owner
-};
-
 /**
  * print_dog - func
  * struct dog - func
@@ -19,6 +12,13 @@ struct dog
  *
  * Description: this
  */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
 void print_dog(struct dog *d)
 {
 	printf("%s\n", d->name);
