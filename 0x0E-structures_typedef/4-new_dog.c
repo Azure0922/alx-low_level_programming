@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * new_dog - func
@@ -22,18 +23,9 @@ typedef struct dog
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	void *p;
-	/* p - void */
+	memcpy(new_dog->name, name, strlen(name) + 1);
+	memcpy(new_dog->age, age, strlen(age) + 1);
+	memcpy(new_dog->owner, owner, strlen(owner) + 1);
 
-	p  = malloc(sizeof(dog_t));
-
-	if (p == NULL)
-	{
-		return (NULL);
-	}
-	strcpy(p->name, name);
-	p->age = age;
-	strcpy(p->owner, owner);
-
-	return (p);
+	return (0);
 }
