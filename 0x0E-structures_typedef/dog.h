@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 /**
  * struct dog - struct
  * @name: 1
@@ -16,3 +19,5 @@ struct dog
 };
 
 typedef struct dog dog_t;
+
+#endif

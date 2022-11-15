@@ -1,21 +1,27 @@
 #include <stdio.h>
-#include "dog.h"
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner
+};
 
 /**
  * print_dog - func
  * struct dog - func
  *
  * @d: struct
+ * @name: char
+ * @age: float
+ * @owner: char
  * Return: 0
+ *
+ * Description: this
  */
 void print_dog(struct dog *d)
 {
-	*d = &me;
-	/* me - declared */
-
-	struct dog me;
-
-	printf("%s\n", me.name);
-	printf("%f\n", me.age);
-	printf("%s\n", me.owner);
+	printf("%s\n", d->name);
+	printf("%f\n", d->age);
+	printf("%s\n", d->owner);
 }

@@ -1,26 +1,29 @@
 #include <stdio.h>
 #include <string.h>
-#include "dog.h"
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
 
 /**
  * init_dog - func
- * struct dog - fun
+ * struct dog - func
+ * struct dog me - var
  *
  * @d: struct
  * @name: char
  * @age: float
  * @owner: char
  * Return: void
+ *
+ * Description: this
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	*d = &me;
-	/* me - declared */
-	
-	struct dog me;
-	/* me - struct */
-
-	strcpy(me.name, name);
-	me.age = age;
-	strcpy(me.owner, owner);
+	strcpy(d->name, name);
+	d->age = age;
+	strcpy(d->owner, owner);
 }
