@@ -14,10 +14,13 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	*d = &me;
+	/* me - declared */
+	
 	struct dog me;
 	/* me - struct */
 
 	strcpy(me.name, name);
 	me.age = age;
-	strcpy(me.owner = owner);
+	strcpy(me.owner, owner);
 }
